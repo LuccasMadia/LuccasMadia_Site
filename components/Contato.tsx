@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Mail, Phone, MessageSquare } from 'lucide-react';
 import FadeIn from './FadeIn';
 
@@ -13,12 +13,13 @@ type FormData = { name: string; email: string; message: string };
 export default function Contato() {
   const t = useTranslations('contato');
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
-  const schema = z.object({
+  const schema = useMemo(() => z.object({
     name: z.string().min(1, t('erroNome')),
     email: z.string().email(t('erroEmail')),
     message: z.string().min(10, t('erroMensagem')),
-  });
+  }), [t]);
 
   const {
     register,
@@ -28,14 +29,21 @@ export default function Contato() {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = async (data: FormData) => {
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
-    if (res.ok) {
-      setSubmitted(true);
-      reset();
+    setSubmitError(false);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        reset();
+      } else {
+        setSubmitError(true);
+      }
+    } catch {
+      setSubmitError(true);
     }
   };
 
@@ -103,6 +111,9 @@ export default function Contato() {
                 >
                   {t('enviar')}
                 </button>
+                {submitError && (
+                  <p className="text-red-500 text-sm text-center">Erro ao enviar. Tente novamente.</p>
+                )}
               </form>
             )}
           </FadeIn>

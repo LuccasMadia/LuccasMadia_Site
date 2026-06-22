@@ -18,11 +18,15 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Invalid input' }, { status: 400 });
   }
 
+  if (!process.env.CONTACT_EMAIL) {
+    return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 });
+  }
+
   const { name, email, message } = parsed.data;
 
   const { error } = await resend.emails.send({
     from: 'onboarding@resend.dev',
-    to: process.env.CONTACT_EMAIL ?? '',
+    to: process.env.CONTACT_EMAIL!,
     subject: `Contato via site — ${name}`,
     text: `De: ${name} <${email}>\n\n${message}`,
   });
