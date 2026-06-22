@@ -2,8 +2,6 @@ import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const bodySchema = z.object({
   name: z.string().min(1),
   email: z.string().email(),
@@ -11,6 +9,14 @@ const bodySchema = z.object({
 });
 
 export async function POST(req: Request) {
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 });
+  }
+
+  if (!process.env.CONTACT_EMAIL) {
+    return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 });
+  }
+
   const body = await req.json().catch(() => null);
   const parsed = bodySchema.safeParse(body);
 
@@ -18,10 +24,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Invalid input' }, { status: 400 });
   }
 
-  if (!process.env.CONTACT_EMAIL) {
-    return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 });
-  }
-
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const { name, email, message } = parsed.data;
 
   const { error } = await resend.emails.send({
