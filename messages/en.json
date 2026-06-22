@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "sobre": "About",
+    "servicos": "Services",
+    "formacoes": "Education",
+    "contato": "Contact"
+  },
+  "hero": {
+    "headline": "Consulting that transforms results",
+    "subheadline": "Administrative, technological, and visual solutions for companies pursuing consistent growth.",
+    "cta": "Explore our services"
+  },
+  "sobre": {
+    "titulo": "About us",
+    "descricao": "We are a consulting firm dedicated to delivering strategic and creative solutions. We operate with commitment, ethics, and a focus on results that drive businesses forward.",
+    "anos": "Years of experience",
+    "projetos": "Projects delivered",
+    "clientes": "Clients served",
+    "anosValor": "5+",
+    "projetosValor": "80+",
+    "clientesValor": "40+"
+  },
+  "servicos": {
+    "titulo": "Our Services",
+    "consultoriaAdmin": {
+      "titulo": "Administrative Consulting",
+      "descricao": "Process and structure optimization for maximum efficiency and sustainable growth."
+    },
+    "dashboards": {
+      "titulo": "Interactive Dashboards",
+      "descricao": "Real-time data visualization for faster, data-driven decisions."
+    },
+    "sites": {
+      "titulo": "Websites & Systems",
+      "descricao": "Custom digital solutions, from institutional websites to complete systems."
+    },
+    "socialMedia": {
+      "titulo": "Social Media",
+      "descricao": "Strategic digital profile management to amplify your online presence and engagement."
+    },
+    "design": {
+      "titulo": "Graphic Design",
+      "descricao": "Visual identity and materials that communicate authority and professionalism."
+    }
+  },
+  "formacoes": {
+    "titulo": "Education",
+    "academicaTitulo": "Academic Background",
+    "tecnicaTitulo": "Certifications & Courses",
+    "academica": [
+      {
+        "nome": "Bachelor's in Business Administration",
+        "instituicao": "University — replace",
+        "ano": "20XX"
+      },
+      {
+        "nome": "Postgraduate in Business Management",
+        "instituicao": "Institution — replace",
+        "ano": "20XX"
+      }
+    ],
+    "tecnica": [
+      {
+        "nome": "Advanced Power BI",
+        "instituicao": "Microsoft",
+        "ano": "20XX"
+      },
+      {
+        "nome": "Google Analytics 4",
+        "instituicao": "Google",
+        "ano": "20XX"
+      },
+      {
+        "nome": "Digital Marketing",
+        "instituicao": "Institution — replace",
+        "ano": "20XX"
+      }
+    ]
+  },
+  "contato": {
+    "titulo": "Contact",
+    "subtitulo": "Get in touch. We'll respond within 24 hours.",
+    "nome": "Name",
+    "email": "Email",
+    "mensagem": "Message",
+    "enviar": "Send message",
+    "sucesso": "Message sent successfully!",
+    "erroNome": "Name is required",
+    "erroEmail": "Invalid email address",
+    "erroMensagem": "Message must be at least 10 characters"
+  },
+  "footer": {
+    "direitos": "All rights reserved",
+    "email": "contact@yourcompany.com"
+  }
+}

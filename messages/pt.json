@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "sobre": "Sobre",
+    "servicos": "Serviços",
+    "formacoes": "Formações",
+    "contato": "Contato"
+  },
+  "hero": {
+    "headline": "Consultoria que transforma resultados",
+    "subheadline": "Soluções administrativas, tecnológicas e visuais para empresas que buscam crescimento com consistência.",
+    "cta": "Conheça nossos serviços"
+  },
+  "sobre": {
+    "titulo": "Sobre nós",
+    "descricao": "Somos uma empresa de consultoria dedicada a entregar soluções estratégicas e criativas. Atuamos com compromisso, ética e foco em resultados que impulsionam negócios.",
+    "anos": "Anos de experiência",
+    "projetos": "Projetos entregues",
+    "clientes": "Clientes atendidos",
+    "anosValor": "5+",
+    "projetosValor": "80+",
+    "clientesValor": "40+"
+  },
+  "servicos": {
+    "titulo": "Nossos Serviços",
+    "consultoriaAdmin": {
+      "titulo": "Consultoria Administrativa",
+      "descricao": "Otimização de processos e estruturas para máxima eficiência e crescimento sustentável."
+    },
+    "dashboards": {
+      "titulo": "Dashboards Interativos",
+      "descricao": "Visualização de dados em tempo real para decisões mais rápidas e embasadas."
+    },
+    "sites": {
+      "titulo": "Sites e Sistemas",
+      "descricao": "Desenvolvimento de soluções digitais sob medida, do site institucional ao sistema completo."
+    },
+    "socialMedia": {
+      "titulo": "Social Media",
+      "descricao": "Gestão estratégica de perfis digitais para ampliar presença e engajamento online."
+    },
+    "design": {
+      "titulo": "Design Gráfico",
+      "descricao": "Identidade visual e materiais que comunicam autoridade e profissionalismo."
+    }
+  },
+  "formacoes": {
+    "titulo": "Formações",
+    "academicaTitulo": "Formação Acadêmica",
+    "tecnicaTitulo": "Certificações & Cursos",
+    "academica": [
+      {
+        "nome": "Bacharelado em Administração",
+        "instituicao": "Universidade — substituir",
+        "ano": "20XX"
+      },
+      {
+        "nome": "Pós-graduação em Gestão Empresarial",
+        "instituicao": "Instituição — substituir",
+        "ano": "20XX"
+      }
+    ],
+    "tecnica": [
+      {
+        "nome": "Power BI Avançado",
+        "instituicao": "Microsoft",
+        "ano": "20XX"
+      },
+      {
+        "nome": "Google Analytics 4",
+        "instituicao": "Google",
+        "ano": "20XX"
+      },
+      {
+        "nome": "Marketing Digital",
+        "instituicao": "Instituição — substituir",
+        "ano": "20XX"
+      }
+    ]
+  },
+  "contato": {
+    "titulo": "Contato",
+    "subtitulo": "Fale conosco. Responderemos em até 24 horas.",
+    "nome": "Nome",
+    "email": "E-mail",
+    "mensagem": "Mensagem",
+    "enviar": "Enviar mensagem",
+    "sucesso": "Mensagem enviada com sucesso!",
+    "erroNome": "Nome obrigatório",
+    "erroEmail": "E-mail inválido",
+    "erroMensagem": "Mensagem deve ter pelo menos 10 caracteres"
+  },
+  "footer": {
+    "direitos": "Todos os direitos reservados",
+    "email": "contato@suaempresa.com.br"
+  }
+}
