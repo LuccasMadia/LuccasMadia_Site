@@ -46,7 +46,7 @@ export default function Hero() {
         >
           <a
             href="#servicos"
-            className="inline-block bg-accent text-primary font-bold px-8 py-4 rounded text-sm tracking-wide hover:bg-amber-400 transition-colors"
+            className="inline-block bg-accent text-primary font-bold px-8 py-4 rounded text-sm tracking-wide hover:opacity-90 transition-opacity"
           >
             {t('cta')}
           </a>

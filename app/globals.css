@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #242524;
+  --color-accent: #77d3ce;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-white text-slate-800 font-sans;
+  background-color: #242524;
+  color: white;
+  @apply font-sans;
 }

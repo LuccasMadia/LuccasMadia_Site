@@ -46,7 +46,7 @@ export default function Navbar() {
               <button
                 onClick={() => switchLocale('pt')}
                 className={`text-sm font-medium transition-colors ${
-                  locale === 'pt' ? 'text-amber-400' : 'text-slate-400 hover:text-white'
+                  locale === 'pt' ? 'text-accent' : 'text-slate-400 hover:text-white'
                 }`}
               >
                 PT
@@ -55,7 +55,7 @@ export default function Navbar() {
               <button
                 onClick={() => switchLocale('en')}
                 className={`text-sm font-medium transition-colors ${
-                  locale === 'en' ? 'text-amber-400' : 'text-slate-400 hover:text-white'
+                  locale === 'en' ? 'text-accent' : 'text-slate-400 hover:text-white'
                 }`}
               >
                 EN
@@ -88,14 +88,14 @@ export default function Navbar() {
           <div className="flex items-center gap-3 px-6 py-3 border-t border-slate-800">
             <button
               onClick={() => switchLocale('pt')}
-              className={`text-sm font-medium ${locale === 'pt' ? 'text-amber-400' : 'text-slate-400'}`}
+              className={`text-sm font-medium ${locale === 'pt' ? 'text-accent' : 'text-slate-400'}`}
             >
               PT
             </button>
             <span className="text-slate-600">/</span>
             <button
               onClick={() => switchLocale('en')}
-              className={`text-sm font-medium ${locale === 'en' ? 'text-amber-400' : 'text-slate-400'}`}
+              className={`text-sm font-medium ${locale === 'en' ? 'text-accent' : 'text-slate-400'}`}
             >
               EN
             </button>

@@ -48,14 +48,14 @@ export default function Contato() {
   };
 
   const inputClass =
-    'w-full px-4 py-3 border border-slate-200 rounded text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors';
+    'w-full px-4 py-3 border border-zinc-600 rounded text-sm text-white placeholder-slate-500 bg-[#2e2f2e] focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors';
 
   return (
-    <section id="contato" className="py-24 bg-slate-50">
+    <section id="contato" className="py-24 bg-primary">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary">{t('titulo')}</h2>
-          <p className="mt-4 text-slate-500">{t('subtitulo')}</p>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">{t('titulo')}</h2>
+          <p className="mt-4 text-slate-400">{t('subtitulo')}</p>
         </FadeIn>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
@@ -107,12 +107,12 @@ export default function Contato() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary text-white font-semibold py-3 rounded hover:bg-slate-800 transition-colors disabled:opacity-60"
+                  className="w-full bg-accent text-primary font-semibold py-3 rounded hover:opacity-90 transition-opacity disabled:opacity-60"
                 >
                   {t('enviar')}
                 </button>
                 {submitError && (
-                  <p className="text-red-500 text-sm text-center">Erro ao enviar. Tente novamente.</p>
+                  <p className="text-red-500 text-sm text-center">{t('erroEnvio')}</p>
                 )}
               </form>
             )}
@@ -123,7 +123,7 @@ export default function Contato() {
               <Mail className="w-5 h-5 text-accent flex-shrink-0" />
               <a
                 href="mailto:contato@suaempresa.com.br"
-                className="text-slate-600 hover:text-primary transition-colors text-sm"
+                className="text-slate-400 hover:text-white transition-colors text-sm"
               >
                 contato@suaempresa.com.br
               </a>
@@ -134,7 +134,7 @@ export default function Contato() {
                 href="https://wa.me/5500000000000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-600 hover:text-primary transition-colors text-sm"
+                className="text-slate-400 hover:text-white transition-colors text-sm"
               >
                 WhatsApp
               </a>
@@ -145,7 +145,7 @@ export default function Contato() {
                 href="https://linkedin.com/in/seu-perfil"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-600 hover:text-primary transition-colors text-sm"
+                className="text-slate-400 hover:text-white transition-colors text-sm"
               >
                 LinkedIn
               </a>

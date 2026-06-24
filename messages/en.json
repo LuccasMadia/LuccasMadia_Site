@@ -87,7 +87,8 @@
     "sucesso": "Message sent successfully!",
     "erroNome": "Name is required",
     "erroEmail": "Invalid email address",
-    "erroMensagem": "Message must be at least 10 characters"
+    "erroMensagem": "Message must be at least 10 characters",
+    "erroEnvio": "Failed to send. Please try again."
   },
   "footer": {
     "direitos": "All rights reserved",

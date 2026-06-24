@@ -20,10 +20,10 @@ export default function Formacoes() {
   const tecnica: FormacaoItem[] = messages.formacoes.tecnica;
 
   return (
-    <section id="formacoes" className="py-24 bg-white">
+    <section id="formacoes" className="py-24 bg-[#1c1d1c]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
             {t('titulo')}
           </h2>
         </FadeIn>
@@ -33,13 +33,13 @@ export default function Formacoes() {
           <FadeIn>
             <div className="flex items-center gap-3 mb-8">
               <GraduationCap className="w-6 h-6 text-accent flex-shrink-0" />
-              <h3 className="font-serif text-xl font-bold text-primary">{t('academicaTitulo')}</h3>
+              <h3 className="font-serif text-xl font-bold text-white">{t('academicaTitulo')}</h3>
             </div>
             <div className="space-y-5">
               {academica.map((item) => (
                 <div key={`${item.nome}-${item.ano}`} className="border-l-2 border-accent/30 pl-5">
-                  <p className="font-semibold text-slate-800">{item.nome}</p>
-                  <p className="text-slate-500 text-sm mt-0.5">
+                  <p className="font-semibold text-slate-200">{item.nome}</p>
+                  <p className="text-slate-400 text-sm mt-0.5">
                     {item.instituicao} · {item.ano}
                   </p>
                 </div>
@@ -51,13 +51,13 @@ export default function Formacoes() {
           <FadeIn delay={0.1}>
             <div className="flex items-center gap-3 mb-8">
               <Award className="w-6 h-6 text-accent flex-shrink-0" />
-              <h3 className="font-serif text-xl font-bold text-primary">{t('tecnicaTitulo')}</h3>
+              <h3 className="font-serif text-xl font-bold text-white">{t('tecnicaTitulo')}</h3>
             </div>
             <div className="space-y-5">
               {tecnica.map((item) => (
                 <div key={`${item.nome}-${item.ano}`} className="border-l-2 border-accent/30 pl-5">
-                  <p className="font-semibold text-slate-800">{item.nome}</p>
-                  <p className="text-slate-500 text-sm mt-0.5">
+                  <p className="font-semibold text-slate-200">{item.nome}</p>
+                  <p className="text-slate-400 text-sm mt-0.5">
                     {item.instituicao} · {item.ano}
                   </p>
                 </div>

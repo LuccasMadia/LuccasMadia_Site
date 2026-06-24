@@ -49,31 +49,21 @@
     "tecnicaTitulo": "Certificações & Cursos",
     "academica": [
       {
-        "nome": "Bacharelado em Administração",
-        "instituicao": "Universidade — substituir",
-        "ano": "20XX"
-      },
-      {
-        "nome": "Pós-graduação em Gestão Empresarial",
-        "instituicao": "Instituição — substituir",
-        "ano": "20XX"
+        "nome": "Bacharelado em Administração (cursando)",
+        "instituicao": "AEMS - Três Lagoas",
+        "ano": "2028 (Conclusão)"
       }
     ],
     "tecnica": [
       {
         "nome": "Power BI Avançado",
-        "instituicao": "Microsoft",
-        "ano": "20XX"
+        "instituicao": "Ipog",
+        "ano": "2026"
       },
       {
-        "nome": "Google Analytics 4",
-        "instituicao": "Google",
-        "ano": "20XX"
-      },
-      {
-        "nome": "Marketing Digital",
-        "instituicao": "Instituição — substituir",
-        "ano": "20XX"
+        "nome": "Programação - Python",
+        "instituicao": "Curso em video - Gustavo Guanabara",
+        "ano": "2026"
       }
     ]
   },
@@ -87,7 +77,8 @@
     "sucesso": "Mensagem enviada com sucesso!",
     "erroNome": "Nome obrigatório",
     "erroEmail": "E-mail inválido",
-    "erroMensagem": "Mensagem deve ter pelo menos 10 caracteres"
+    "erroMensagem": "Mensagem deve ter pelo menos 10 caracteres",
+    "erroEnvio": "Erro ao enviar. Tente novamente."
   },
   "footer": {
     "direitos": "Todos os direitos reservados",
