@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/lib/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const t = useTranslations('nav');
@@ -25,10 +26,9 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-sm border-b border-slate-800">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <a href="#inicio" className="text-white font-bold text-lg tracking-tight">
-            [LOGO]
+      <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+          <a href="#inicio">
+            <Image src="/logo.png" alt="Madia Consultoria" width={300} height={120} className="h-16 w-auto object-contain" />
           </a>
 
           {/* Desktop nav */}
@@ -70,7 +70,6 @@ export default function Navbar() {
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
-        </div>
       </div>
 
       {menuOpen && (

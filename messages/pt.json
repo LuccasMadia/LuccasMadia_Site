@@ -18,7 +18,7 @@
     "clientes": "Clientes atendidos",
     "anosValor": "5+",
     "projetosValor": "80+",
-    "clientesValor": "40+"
+    "clientesValor": "+"
   },
   "servicos": {
     "titulo": "Nossos Serviços",
@@ -56,7 +56,12 @@
     ],
     "tecnica": [
       {
-        "nome": "Power BI Avançado",
+        "nome": "Pós Graduação - Power BI Avançado",
+        "instituicao": "Ipog",
+        "ano": "2026"
+      },
+      {
+        "nome": "Curso de Extensão - Cronograma e Ferramentas de produtividade",
         "instituicao": "Ipog",
         "ano": "2026"
       },
@@ -82,6 +87,6 @@
   },
   "footer": {
     "direitos": "Todos os direitos reservados",
-    "email": "contato@suaempresa.com.br"
+    "email": "madiaconsultoria@gmail.com"
   }
 }

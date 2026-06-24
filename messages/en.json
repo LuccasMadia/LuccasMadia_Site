@@ -18,7 +18,7 @@
     "clientes": "Clients served",
     "anosValor": "5+",
     "projetosValor": "80+",
-    "clientesValor": "40+"
+    "clientesValor": "+"
   },
   "servicos": {
     "titulo": "Our Services",
@@ -49,31 +49,26 @@
     "tecnicaTitulo": "Certifications & Courses",
     "academica": [
       {
-        "nome": "Bachelor's in Business Administration",
-        "instituicao": "University — replace",
-        "ano": "20XX"
-      },
-      {
-        "nome": "Postgraduate in Business Management",
-        "instituicao": "Institution — replace",
-        "ano": "20XX"
+        "nome": "Bachelor's in Business Administration (in progress)",
+        "instituicao": "AEMS - Três Lagoas",
+        "ano": "2028 (Expected)"
       }
     ],
     "tecnica": [
       {
-        "nome": "Advanced Power BI",
-        "instituicao": "Microsoft",
-        "ano": "20XX"
+        "nome": "Postgraduate - Advanced Power BI",
+        "instituicao": "Ipog",
+        "ano": "2026"
       },
       {
-        "nome": "Google Analytics 4",
-        "instituicao": "Google",
-        "ano": "20XX"
+        "nome": "Extension Course - Scheduling and Productivity Tools",
+        "instituicao": "Ipog",
+        "ano": "2026"
       },
       {
-        "nome": "Digital Marketing",
-        "instituicao": "Institution — replace",
-        "ano": "20XX"
+        "nome": "Programming - Python",
+        "instituicao": "Video Course - Gustavo Guanabara",
+        "ano": "2026"
       }
     ]
   },
@@ -92,6 +87,6 @@
   },
   "footer": {
     "direitos": "All rights reserved",
-    "email": "contact@yourcompany.com"
+    "email": "madiaconsultoria@gmail.com"
   }
 }

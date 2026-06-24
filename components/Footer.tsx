@@ -13,19 +13,19 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-5">
             <a
-              href="https://instagram.com/seu-perfil"
+              href="https://www.linkedin.com/in/luccas-madia-b0229739b/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
+              aria-label="LinkedIn"
               className="text-slate-400 hover:text-accent transition-colors"
             >
               <Share2 size={20} />
             </a>
             <a
-              href="https://example.com"
+              href="https://github.com/LuccasMadia"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Website"
+              aria-label="GitHub"
               className="text-slate-400 hover:text-accent transition-colors"
             >
               <Globe size={20} />
